@@ -1,0 +1,68 @@
+/* General container styling for the blog posts */
+#blog-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Styling for individual blog posts */
+.blog-post {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.blog-post:hover {
+    background-color: #f0f0f0;
+}
+
+/* Blog post title */
+.blog-post h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Blog post date */
+.blog-post p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Blog post description */
+.blog-post .description {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Blog post image styling */
+.blog-post img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.page-title {
+    text-align: center;
+    padding: 20px;
+    font-size: 80px;
+    color: whitesmoke;
+}

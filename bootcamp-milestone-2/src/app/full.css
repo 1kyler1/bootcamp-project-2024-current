@@ -1,0 +1,154 @@
+a:link {
+    color: red;
+    text-decoration: underline;
+  }
+  
+  a:visited {
+    color: white;
+  }
+  
+  a:active {
+    color: red;
+  }
+  
+  a:hover {
+    color: green;
+    text-decoration: none;
+  }
+  
+  input:focus {
+    border: 1px solid #aaa;
+  }
+  .page-title {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-top: 150px;
+    margin-left: 44%;
+    
+  }
+  body {
+    font-size: 18px;
+    background-size: 1400px;
+    background-color: black;
+  }
+  
+  
+  
+  p {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+  }
+  p,
+  h1,
+  .titles {
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+  
+  h2, h3, p, ul {
+    color: white;
+  }
+  
+  .logo {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+  
+  img {
+    padding: 10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 300px;
+    width: auto;
+  }
+  .about-text {
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logo {
+    font-family: Papyrus, fantasy;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 5%
+  }
+  
+  ul.nav-list {
+    display: inline;
+    margin-left: 10%
+  
+  }
+  li.nav {
+    display: inline-block;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    margin-left: 100px;
+  }
+  footer {
+    margin-top: 50px;
+    color: white;
+  }
+  
+  label {
+    color: white
+  }
+  
+  ul.course-list {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: lightgreen;
+  }
+  
+  .entry-title {
+    margin-left: 40px;
+    color: lightblue;
+  }
+  
+  .skill-list {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .comment {
+    color: white
+    }
+    
+  h4.user {
+    color: white;
+    text-align: center;
+    display: block
+  }
+  div.comment {
+    padding: 10px;
+    border: 10px solid white;
+    display: block; 
+    margin: 10px auto; /* Adjusted margin for centering */
+    max-width: 500px; /* Adjust the maximum width based on design */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  span.time {
+    text-align: right;
+    font-size: 15px;
+    display: block
+  }

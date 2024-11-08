@@ -1,0 +1,28 @@
+.cutout-box {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 450px; 
+    width: 450px;
+    margin: 100px auto; 
+    background-color: white;/
+    position: relative; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  /* Style for the cutout text */
+  .cutout-text {
+    font-size: 120px; 
+    font-weight: bold; 
+    background: url('dark_mountain.jpg') center center / cover no-repeat; 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent; 
+    margin: 0; 
+    text-align: center;
+    text-transform: uppercase; 
+    z-index: 1; 
+  }
+
+

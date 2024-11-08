@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  overflow-y: scroll; 
+}
+
+body {
+  background-color: black; 
+  background-image: url('dark_mountain.jpg'); 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  position: relative;
+  min-height: 100vh;
+  padding-top: 60px;
+  margin: 0;
+  color: black; 
+} */
+
+main { 
+  flex: 1;
+  padding: 0 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+} 
+
+/* /* CSS for navigation bar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* background-color: black; */
+  color: white;
+  padding: 0;
+  margin: 0;
+
+  
+  
+} 
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin
+}
+
+.navbar a:hover {
+  background-color: white; /* White box */
+  color: black; /* Black text inside the white box */
+  border-radius: 3px; /* Rounded corners */
+  padding: 2px 3px;
+  border-bottom: none; /* Remove underline on hover */
+}
+
+
+
+/* CSS for page footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
