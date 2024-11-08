@@ -6,39 +6,39 @@ export default function Home() {
   return (
     <div>
        <main>
-            <div className="cutout-box">
-                <h1 className="cutout-text">Kyler Nord</h1>
+            <div className="cutout_box">
+                <h1 className="cutout_text">Kyler Nord</h1>
             </div>
 
-            <h1 className="page-title">  </h1>
+            <h1 className="page_title">  </h1>
             <div className="about">
-            <div className="about-image">
+            <div className="about_image">
             </div>
-                <div className="about-text"></div>
+                <div className="about_text"></div>
 
             </div>
              {/* Blog Page Link */}
-             <div className="link-to-blog">
+             <div className="link_to_blog">
                 <Link href="/blog">
-                    <a>Visit My Blog</a>
+                    <>Visit My Blog</>
                 </Link>
             </div>
              {/* COntactMe page link */}
-             <div className="link-to-contactMe">
+             <div className="link_to_contactMe">
                 <Link href="/contactMe">
-                    <a>Contact Me</a>
+                    <>Contact Me</>
                 </Link>
             </div>
             {/* COntactMe page link */}
-            <div className="link-to-Portfolio">
+            <div className="link_to_Portfolio">
                 <Link href="/portfolio">
-                    <a>Portfolio</a>
+                    <>Portfolio</>
                 </Link>
             </div>
             {/* COntactMe page link */}
-            <div className="link-to-Resume">
+            <div className="link_to_Resume">
                 <Link href="/resume">
-                    <a>Resume</a>
+                    <>Resume</>
                 </Link>
             </div>
         </main>
