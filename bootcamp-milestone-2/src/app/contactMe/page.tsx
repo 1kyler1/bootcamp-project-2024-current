@@ -4,7 +4,7 @@ function ContactPage() {
     <main>
       {/* Contact Form */}
       <h1 className={styles.page_title}>Contact Me</h1>
-      <form id={styles.contact_form}>
+      <form className={styles.contact_form} id="contact_form">
         <label htmlFor="name">Name:</label>
         <input type="text" id="name" name="name" required />
 
@@ -19,6 +19,7 @@ function ContactPage() {
     </main>
   );
 }
+export default ContactPage;
 
 
 
