@@ -5,7 +5,7 @@ import "@/app/full.css";
 import BlogPreview from "@/components/portfolioPreview";
 import projects from "@/app/portfolioData";
 
-export default function Portfolio() {
+function Portfolio() {
     return (
       <div>
           <main>
@@ -33,3 +33,4 @@ export default function Portfolio() {
       </div>
     )
   }
+  export default Portfolio;
