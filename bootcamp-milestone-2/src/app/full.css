@@ -28,7 +28,7 @@ a:link {
   body {
     font-size: 18px;
     background-size: 1400px;
-    background-color: black;
+    background-color: white;
   }
   
   
@@ -42,7 +42,7 @@ a:link {
   p,
   h1,
   .titles {
-    color: white;
+    color: black;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -98,7 +98,7 @@ a:link {
     display: inline-block;
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 24px;
-    color: white;
+    color: black;
     padding: 10px;
     border-width: 5px;
     border-style: solid;
@@ -107,11 +107,11 @@ a:link {
   }
   footer {
     margin-top: 50px;
-    color: white;
+    color: black;
   }
   
   label {
-    color: white
+    color: black
   }
   
   ul.course-list {

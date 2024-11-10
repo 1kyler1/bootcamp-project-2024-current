@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,8 +11,8 @@
     align-items: center;
     text-align: center;
   
-    /* background-color: black; */
-    color: white;
+    
+    color: black;
     padding: 0;
     margin: 0;
   
@@ -24,13 +24,13 @@
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0; 
+    padding: 0; 
     gap: 20px;
   }
   
   .navbar a {
-    color: white;
+    color: black;
     font-weight: bold;
     text-decoration: none;
     letter-spacing: 2px;
@@ -38,9 +38,53 @@
   }
   
   .navbar a:hover {
-    background-color: white; /* White box */
-    color: black; /* Black text inside the white box */
-    border-radius: 3px; /* Rounded corners */
+    background-color: blue; 
+    color: blue; 
+    border-radius: 3px; 
     padding: 2px 3px;
-    border-bottom: none; /* Remove underline on hover */
+    border-bottom: none; 
+  } */
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: grey;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    margin: 0;
+    color: black;
+  }
+  
+  .navLink {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .navLink::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+  }
+  
+  .navLink:hover {
+    color: black;
+  }
+  
+  .navLink:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }

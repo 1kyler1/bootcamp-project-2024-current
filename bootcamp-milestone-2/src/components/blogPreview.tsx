@@ -3,6 +3,7 @@ import Image from "next/image"
 import type { Blog } from "@/app/blogData"
 import style from './blogPreview.module.css'
 
+// cumponent for blog, it iterates through all the blogs from blgo data an ddisplays them
 export default function BlogPreview(props: Blog) {
   return (
     <div className={style.previewContainer}>

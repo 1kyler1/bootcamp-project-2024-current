@@ -1,4 +1,9 @@
-.website-project {
+
+.title, .description, .date {
+  color: black; /* Ensures all text in the project component is black */
+}
+
+.website_project {
     background-color: white; 
     padding: 20px; 
     margin: 20px auto; 
@@ -8,7 +13,7 @@
     text-align: center; 
   }
   
-  .NBA-Stats-Website {
+  .NBA_Stats_Website {
     background-color: white; 
     padding: 20px; 
     margin: 20px auto; 
@@ -18,7 +23,7 @@
     text-align: center;
   }
   
-  .nba-text-list {
+  .nba_text_list {
     list-style-type: disc; 
     padding-left: 0; 
     display: inline-block; 
@@ -26,7 +31,7 @@
     margin: 0 auto 20px auto; 
   }
   
-  .website-text-list {
+  .website_text_list {
     list-style-type: disc; 
     padding-left: 0; 
     display: inline-block; 
@@ -35,7 +40,7 @@
   }
   
   /* Style for the NBA image */
-  .NBA-Image img {
+  .NBA_Image img {
     max-width: 60%; 
     height: auto; 
     display: block; 
@@ -43,13 +48,13 @@
   }
   
   /* Style for the GitHub link */
-  .github-link {
+  .github_link {
     text-decoration: none; 
     font-size: 14px; 
     color: #007bff; 
   }
   
-  .Homepage-Image img {
+  .Homepage_Image img {
       max-width: 40%; 
       height: auto; 
       display: block; 
