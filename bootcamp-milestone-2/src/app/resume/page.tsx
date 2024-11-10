@@ -4,30 +4,30 @@ export default function Resume() {
     return (
         <div>
             <main>
-                <h1 className='resume_background'></h1>
-                <div className='download'>
+                <h1 className={styles.resume_background}></h1>
+                <div className={styles.download}>
                     <Link href="resume-pdf" download>DownloadResume</Link>
      
                 </div>
                 <h2 className="name">Kyler Nord</h2>
-                <div className="contact_info">
+                <div className={styles.contact_info}>
                     <Link href="mailto:nordkyler@gmail.com">nordkyler@gmail.com</Link> *<Link href="tel:206-557-9408" >206-557-9408 </Link>
                     <Link href="https://www.linkedin.com/in/1kylernord1/">LinkedIn</Link> *
                     <Link href="https://github.com/1kyler1">GitHub</Link>
                 </div>
-                <div className = "resume_content">
-                    <div className= "section">
+                <div className = {styles.resume_content}>
+                    <div className= {styles.section}>
                     <h2>Education</h2>
                         
                         <p><strong>California Polytechnic State University, San Luis Obispo </strong> 
-                            <span className="date">Expected Graduation: 2027</span>
+                            <span className={styles.date}>Expected Graduation: 2027</span>
                         </p>
                         <p>B.S. in Computer Science | GPA: 3.7/4.0</p>
                         <ul>
                             <li>Dean's List: 2x</li>
                             <li>Relevant Courses: Data Structures (CSC 202), Python (CSC 101), Linear Algebra, Calculus 1, 2, and 3</li>
                         </ul>
-                    <div className="section">
+                    <div className={styles.section}>
                         <h2>Technical Skills</h2>
                         
                         <ul>
@@ -37,11 +37,11 @@ export default function Resume() {
                         </ul>
                     </div>
 
-                    <div className="section">
+                    <div className={styles.section}>
                         <h2>Professional Experience</h2>
                         
                         <p><strong>Helium Miner Management (Personal Business) </strong>
-                            <span className="date">September 2021 - December 2023</span>
+                            <span className={styles.date}>September 2021 - December 2023</span>
                         </p>
                         <ul>
                             <li>Managed a network of Helium hotspot miners.</li>
@@ -50,7 +50,7 @@ export default function Resume() {
                         </ul>
 
                         <p><strong>Cal Poly Startup Launch Weekend </strong>
-                            <span className="date"> November 2023</span>          
+                            <span className={styles.date}> November 2023</span>          
                         </p>
                         <ul>
                             <li>Led a team of four to develop an app called "Handy."</li>
@@ -59,12 +59,12 @@ export default function Resume() {
                         </ul>
                     </div>
 
-                    <div className="section">
+                    <div className={styles.section}>
                         <h2>Projects</h2>
                         
 
                         <p><strong>NBA Combine Stats Website </strong> 
-                            <span className="date">July 2024 - Present</span>
+                            <span className={styles.date}>July 2024 - Present</span>
                         </p>
                         <ul>
                             <li>Implemented an API for NBA combine player stats.</li>
@@ -72,7 +72,7 @@ export default function Resume() {
                         </ul>
 
                         <p><strong>Personal Website </strong> 
-                            <span className="date">August 2024 - September 2024</span>
+                            <span className={styles.date}>August 2024 - September 2024</span>
                         </p>
                         <ul>
                             <li>Completed Hack4Impact bootcamp for HTML and CSS</li>
@@ -80,7 +80,7 @@ export default function Resume() {
                         </ul>
 
                         <p><strong>GPS Dog Collar with Alert System </strong> 
-                            <span className="date">September 2023 - October 2023</span>
+                            <span className={styles.date}>September 2023 - October 2023</span>
                         </p>
                         <ul>
                             <li>Developed a GPS-enabled dog collar using Arduino.</li>
@@ -89,7 +89,7 @@ export default function Resume() {
                         </ul>
                     </div>
 
-                    <div className="section">
+                    <div className={styles.section}>
                         <h2>Awards</h2>
                         
                         <ul>
@@ -103,7 +103,7 @@ export default function Resume() {
                     </div>
                 </div>
             </main>
-            <footer className="footer">"© 2023 kyler's Personal Website | All Rights Reserved</footer>
+            <footer className={styles.footer}>"© 2023 kyler's Personal Website | All Rights Reserved</footer>
 
             
         </div>

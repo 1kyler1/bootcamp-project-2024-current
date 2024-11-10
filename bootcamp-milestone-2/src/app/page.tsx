@@ -58,9 +58,18 @@ export default function Home() {
           <h1 className={styles.page_title}></h1>
   
           <div className={styles.about}>
-            <div className={styles.about_image}></div>
+            <div className={styles.about_image}>
+            
+            <Image
+              src="/kyler.jpeg" // Replace this with your actual image path
+              alt="A photo of Kyler" // Provide descriptive alt text
+              width={300} // Adjust width as needed
+              height={300} // Adjust height as needed
+            />
+
+            </div>
             <div className={styles.about_text}>
-              Welcome to my website! Im Kyler, a web developer passionate about creating clean and functional websites.
+              Hello, my name is Kyler Nord and i am currently a computer science student at Cal Poly. 
             </div>
           </div>
   
