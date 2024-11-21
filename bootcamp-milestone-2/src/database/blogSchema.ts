@@ -21,6 +21,7 @@ const blogSchema = new Schema<Blog>({
 		date: { type: Date, required: false, default: new Date()},
 		description: { type: String, required: true },
 		content: { type: String, required: true },
+        image: { type: String, required: true },
 })
 
 // defining the collection and model

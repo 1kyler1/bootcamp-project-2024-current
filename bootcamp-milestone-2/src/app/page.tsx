@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from 'next/link';
-// import styles from "./home.module.css";
-import styles from "./globals.css"
+import styles from "./home.module.css";
+// import styles from "./globals.css"
 //Home page
 // export default function Home() {
 //   return (
