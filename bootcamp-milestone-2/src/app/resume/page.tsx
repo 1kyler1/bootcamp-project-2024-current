@@ -11,9 +11,9 @@ export default function Resume() {
                 </div>
                 <h2 className="name">Kyler Nord</h2>
                 <div className={styles.contact_info}>
-                    <Link href="mailto:nordkyler@gmail.com">nordkyler@gmail.com</Link> *<Link href="tel:206-557-9408" >206-557-9408 </Link>
-                    <Link href="https://www.linkedin.com/in/1kylernord1/">LinkedIn</Link> *
-                    <Link href="https://github.com/1kyler1">GitHub</Link>
+                    <Link href="mailto:nordkyler@gmail.com">nordkyler@gmail.com</Link> *<Link href="tel:206-557-9408" >206-557-9408 </Link> *
+                    <Link href="https://www.linkedin.com/in/1kylernord1/" target="_blank" rel="noopener noreferrer">LinkedIn</Link> *
+                    <Link href="https://github.com/1kyler1" target="_blank" rel="noopener noreferrer">GitHub </Link>
                 </div>
                 <div className = {styles.resume_content}>
                     <div className= {styles.section}>

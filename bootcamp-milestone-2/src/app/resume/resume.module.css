@@ -1,4 +1,4 @@
-.resume_background {
+/* .resume_background {
   background-color: white; 
   padding: 20px; 
   border-radius: 8px; 
@@ -13,14 +13,14 @@
 .resume_content {
   margin-left: auto;
   margin-right: auto;
-  /* max-width: 800px; Set a consistent max width for all sections */
+  
   width: 100%;
   padding: 20px; 
   margin: 15px;
   line-height: 1.6;
 }
 
-/* Indentation for bullet points in resume sections */
+
 .resume_content ul {
   padding-left: 20px; 
   margin-top: 0; 
@@ -34,10 +34,10 @@
 
 .contact_info {
   margin: 20px 0;
-  text-align: center; /* Center text inside the div */
+  text-align: center; /
 }
 
-/* Centering the download button */
+
 .download {
   text-align: center;
 }
@@ -50,8 +50,131 @@
   margin: 0; 
 }
 
-/* Styling for the date */
+
 .date {
-  margin-left: auto; /* Pushes the date to the far right */
+  margin-left: auto; 
   font-weight: normal; 
+} */
+
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; 
+  color: #000; 
+}
+
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
+/* Resume Header */
+.resume_background {
+  background-color: #e0e0e0;
+  height: 150px;
+  border-radius: 8px 8px 0 0;
+}
+
+.name {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #000; /* Black text */
+}
+
+.contact_info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact_info  {
+  color: #000; /* Black text */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.contact_info a:hover {
+  text-decoration: underline;
+}
+
+/* Download Button */
+.download {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.download a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.download a:hover {
+  background-color: #0056b3;
+}
+
+/* Resume Content */
+.resume_content {
+  margin-top: 20px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000; /* Black text */
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.section p {
+  font-size: 1em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.section ul {
+  margin: 10px 0 0 20px;
+  padding-left: 10px;
+  list-style-type: disc;
+}
+
+.section ul li {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #000; /* Black text */
+}
+
+/* Date Styling */
+.date {
+  float: right;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+  background-color: #343a40;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 0.9em;
 }
