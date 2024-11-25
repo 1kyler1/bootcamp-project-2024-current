@@ -1,5 +1,3 @@
-// import mongoose, { Schema } from "mongoose";
-// import { Schema } from "mongoose";
 import { Schema } from "mongoose";
 import mongoose from "mongoose";
 // typescript type (can also be an interface)
@@ -25,7 +23,6 @@ const blogSchema = new Schema<Blog>({
 })
 
 // defining the collection and model
-const Blog = mongoose.models['blogs'] ||
-    mongoose.model('blogs', blogSchema);
+const Blog = mongoose.models['blogs'] || mongoose.model('blogs', blogSchema);
 
 export default Blog;

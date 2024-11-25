@@ -3,7 +3,7 @@
   color: black; /* Ensures all text in the project component is black */
 }
 
-.website_project {
+/* .website_project {
     background-color: white; 
     padding: 20px; 
     margin: 20px auto; 
@@ -40,23 +40,23 @@
   }
   
   /* Style for the NBA image */
-  .NBA_Image img {
+  /* .NBA_Image img {
     max-width: 60%; 
     height: auto; 
     display: block; 
     margin: 0 auto; 
-  }
+  } */
   
   /* Style for the GitHub link */
-  .github_link {
+  /* .github_link {
     text-decoration: none; 
     font-size: 14px; 
     color: #007bff; 
-  }
+  } */
   
-  .Homepage_Image img {
+  /* .Homepage_Image img {
       max-width: 40%; 
       height: auto; 
       display: block; 
       margin: 0 auto; 
-    }
+    } */ 

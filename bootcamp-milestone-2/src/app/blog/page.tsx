@@ -1,11 +1,9 @@
 import React from 'react';
 import "@/app/full.css";
+// import style from "blog.module.css"
 import BlogPreview from "@/components/blogPreview";
 import getBlogs from '@/app/blogData';
 import type { Blog } from "@/app/blogData";
-import Image from 'next/image';
-
-// import blogs from "@/app/blogData";
 
 
 export default async function BlogPage() {
@@ -14,7 +12,7 @@ export default async function BlogPage() {
   return (
       <div>
           <main className="main">
-              <h1 className="page_title">MY BLOG</h1>
+              <h1 className="page_title">My Blog</h1>
               <div className="content" id="blog">
                   <ul id="blog_list" className="blog_list">
                       {blogs.map((blog) => (
