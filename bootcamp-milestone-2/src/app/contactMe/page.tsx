@@ -1,22 +1,26 @@
 import styles from "./contactMe.module.css"
 function ContactPage() {
   return (
-    <main>
-      {/* Contact Form */}
-      <h1 className={styles.page_title}>Contact Me</h1>
-      <form className={styles.contact_form} id="contact_form">
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+    <div>
+      <main>
+        {/* Contact Form */}
+        <h1 className={styles.page_title}>Contact Me</h1>
+        <form className={styles.contact_form} id="contact_form">
+          <label htmlFor="name">Name:</label>
+          <input type="text" id="name" name="name" required />
 
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" name="message" rows= {5} required></textarea>
+          <label htmlFor="message">Message:</label>
+          <textarea id="message" name="message" rows= {5} required></textarea>
 
-        <input type="submit" value="Send" />
-      </form>
-    </main>
+          <input type="submit" value="Send" />
+        </form>
+      </main>
+      <footer className="footer"> © 2023 Kyler Nord | All Rights Reserved</footer>
+    </div>
+    
   );
 }
 export default ContactPage;

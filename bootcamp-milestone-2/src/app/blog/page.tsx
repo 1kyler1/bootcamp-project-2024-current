@@ -1,6 +1,5 @@
 import React from 'react';
 import "@/app/full.css";
-// import style from "blog.module.css"
 import BlogPreview from "@/components/blogPreview";
 import getBlogs from '@/app/blogData';
 import type { Blog } from "@/app/blogData";

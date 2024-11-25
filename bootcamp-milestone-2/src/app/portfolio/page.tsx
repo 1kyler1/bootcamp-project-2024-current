@@ -8,12 +8,11 @@ import type { Project } from "@/app/portfolioData";
 export default async function ProjectsPage() {
   const projects: Project[] = await getProjects() || []; // Fetch data directly
 
-
   return (
     <div>
         <main className="main">
             <h1 className="page_title">My Portfolio</h1>
-            <div className="content" id="blog">
+            <div className="content" id="project">
                 <ul id="project_list" className="project_list">
                     {projects.map((project) => (
                         <PortfolioPreview

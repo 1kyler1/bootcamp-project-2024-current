@@ -1,7 +1,5 @@
 import connectDB from "@/database/db";
 import BlogMode1 from "@/database/blogSchema";
-// import { StaticImageData } from "next/image";
-// import Image from 'next/image';
 
 const blogs: Blog[] = []; // Initialize as an empty array
 

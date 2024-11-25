@@ -24,12 +24,12 @@ export default function Home() {
 
             </div>
             <div className={styles.about_text}>
-              Hello, my name is Kyler Nord and i am currently a computer science student at Cal Poly. 
+              Hello, my name is <strong>Kyler Nord</strong> and I am currently a computer science student at Cal Poly SLO. 
             </div>
           </div>
   
-          {/* Links to other pages */}
-          <div className={styles.link_to_blog}>
+        
+          {/* <div className={styles.link_to_blog}>
             <Link href="/blog">
               <>Visit My Blog</>
             </Link>
@@ -48,7 +48,7 @@ export default function Home() {
             <Link href="/resume">
               <>Resume</>
             </Link>
-          </div>
+          </div> */}
         </main>
         <footer className={styles.footer}>© 2023 Kyler Nord | All Rights Reserved</footer>
       </div>

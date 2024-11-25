@@ -11,8 +11,8 @@ export interface Project {
     content: string
     image: string;
     comments: Comment[];
-   
 }
+
 
 
 async function getProjects(){
@@ -29,11 +29,11 @@ async function getProjects(){
 }
 
 async function initializeProjects() {
-	const fetchedBlogs = await getProjects();
+	const fetchedProjects = await getProjects();
   
-	if (fetchedBlogs) {
+	if (fetchedProjects) {
 	  // Populate the blogs array if fetching is successful
-	  projects.push(...fetchedBlogs);
+	  projects.push(...fetchedProjects);
 	}
 }
   
@@ -41,4 +41,4 @@ console.log(projects)
 
 initializeProjects();
 
-export default getProjects;  // HEr ei exported the arrya so that it can be accessed elsewhere
+export default getProjects;  
