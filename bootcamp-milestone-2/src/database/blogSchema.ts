@@ -2,7 +2,7 @@ import { Schema } from "mongoose";
 import mongoose from "mongoose";
 
 // typescript type (can also be an interface)
-type Blog = {
+export type Blog = {
     title: string;
     slug: string; 
     date: Date;
@@ -11,6 +11,12 @@ type Blog = {
     image: string;
     comments: Comment[]; // array for comments
 };
+
+export type IComment = {
+    user: string;
+    comment: string;
+    time: string;
+}
 
 
 // mongoose schema 
@@ -21,7 +27,14 @@ const blogSchema = new Schema<Blog>({
 		description: { type: String, required: true },
 		content: { type: String, required: true },
         image: { type: String, required: true },
-})
+        comments: [
+            {
+                user: { type: String, required: true},
+                comment: { type: String, required: true},
+                time: { type: Date, required: false, default: new Date()},
+            },
+        ],
+});
 
 // defining the collection and model
 const Blog = mongoose.models['blogs'] || mongoose.model('blogs', blogSchema);
