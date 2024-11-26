@@ -1,5 +1,6 @@
 import { Schema } from "mongoose";
 import mongoose from "mongoose";
+
 // typescript type (can also be an interface)
 type Blog = {
     title: string;

@@ -1,62 +1,60 @@
 
 .title, .description, .date {
-  color: black; /* Ensures all text in the project component is black */
+  color: black; /* Set text color to black */
 }
 
-/* .website_project {
-    background-color: white; 
-    padding: 20px; 
-    margin: 20px auto; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px; 
-    text-align: center; 
-  }
-  
-  .NBA_Stats_Website {
-    background-color: white; 
-    padding: 20px; 
-    margin: 20px auto; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px; 
-    text-align: center;
-  }
-  
-  .nba_text_list {
-    list-style-type: disc; 
-    padding-left: 0; 
-    display: inline-block; 
-    text-align: left; 
-    margin: 0 auto 20px auto; 
-  }
-  
-  .website_text_list {
-    list-style-type: disc; 
-    padding-left: 0; 
-    display: inline-block; 
-    text-align: left; 
-    margin: 0 auto 20px auto; 
-  }
-  
-  /* Style for the NBA image */
-  /* .NBA_Image img {
-    max-width: 60%; 
-    height: auto; 
-    display: block; 
-    margin: 0 auto; 
-  } */
-  
-  /* Style for the GitHub link */
-  /* .github_link {
-    text-decoration: none; 
-    font-size: 14px; 
-    color: #007bff; 
-  } */
-  
-  /* .Homepage_Image img {
-      max-width: 40%; 
-      height: auto; 
-      display: block; 
-      margin: 0 auto; 
-    } */ 
+
+/* Container for each blog preview */
+.previewContainer {
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+margin: 20px;
+transition: transform 0.2s, box-shadow 0.2s;
+max-width: 500px;
+width: 100%;
+}
+
+.previewContainer:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.title {
+font-size: 1.8em;
+font-weight: bold;
+text-align: center;
+margin: 15px 0;
+color: #007bff;
+transition: color 0.2s;
+}
+
+.title:hover {
+color: #0056b3;
+}
+
+/* Content container */
+.content {
+padding: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+text-align: center;
+}
+
+/* Image styling */
+.image {
+border-radius: 8px;
+object-fit: cover;
+width: 100%;
+height: auto;
+max-height: 300px;
+}
+

@@ -1,5 +1,5 @@
 import connectDB from "@/database/db";
-import Projects from "@/database/projectSchema"
+import ProjectMode1 from "@/database/projectSchema"
 
 const projects: Project[] = [];
 
@@ -20,7 +20,7 @@ async function getProjects(){
 
 	try {
 			// query for all blogs and sort by date
-	    const projects = await Projects.find().sort({ date: -1 }).orFail()
+	    const projects = await ProjectMode1.find().sort({ date: -1 }).orFail()
 			// send a response as the blogs as the message
 	    return projects
 	} catch (err) {
