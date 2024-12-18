@@ -66,15 +66,7 @@
   }
 
 
-  /* Footer-specific styles (aligned with global.css) */
-.footer {
-  text-align: center;
-  padding: 15px 0;
-  background-color: #343a40;
-  color: #fff;
-  margin: bottom; /* Ensures the footer is pushed to the bottom */
-  border-radius: 8px;
-}
   
+   
   
 

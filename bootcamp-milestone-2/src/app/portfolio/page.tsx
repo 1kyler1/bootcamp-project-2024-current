@@ -29,7 +29,7 @@ export default async function ProjectsPage() {
                 </ul>
             </div>
         </main>
-        <footer className="footer">© 2023 Kyler Nord | All Rights Reserved</footer>
+        
     </div>
 );
 }

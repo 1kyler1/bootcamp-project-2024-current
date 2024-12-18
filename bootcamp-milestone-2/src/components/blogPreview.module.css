@@ -1,9 +1,9 @@
 .title, .description, .date {
-    color: black; /* Set text color to black */
+    color: black; 
   }
 
 
-  /* Container for each blog preview */
+  
 .previewContainer {
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Title styling */
+
 .title {
   font-size: 1.8em;
   font-weight: bold;
@@ -38,7 +38,7 @@
   color: #0056b3;
 }
 
-/* Content container */
+
 .content {
   padding: 20px;
   display: flex;
@@ -48,7 +48,7 @@
   text-align: center;
 }
 
-/* Image styling */
+
 .image {
   border-radius: 8px;
   object-fit: cover;

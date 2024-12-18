@@ -5,6 +5,7 @@ import getBlogs from '@/app/blogData';
 import type { Blog } from "@/app/blogData";
 
 
+
 export default async function BlogPage() {
   const blogs: Blog[] = await getBlogs() || []; // Fetch data directly
 
@@ -31,9 +32,10 @@ export default async function BlogPage() {
                   </ul>
               </div>
           </main>
-          <footer className="footer">© 2023 Kyler Nord | All Rights Reserved</footer>
+
       </div>
   );
 }
+
 
 

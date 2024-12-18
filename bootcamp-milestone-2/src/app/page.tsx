@@ -27,30 +27,9 @@ export default function Home() {
               Hello, my name is <strong>Kyler Nord</strong> and I am currently a computer science student at Cal Poly SLO. 
             </div>
           </div>
-  
-        
-          {/* <div className={styles.link_to_blog}>
-            <Link href="/blog">
-              <>Visit My Blog</>
-            </Link>
-          </div>
-          <div className={styles.link_to_contactMe}>
-            <Link href="/contactMe">
-              <>Contact Me</>
-            </Link>
-          </div>
-          <div className={styles.link_to_Portfolio}>
-            <Link href="/portfolio">
-              <>Portfolio</>
-            </Link>
-          </div>
-          <div className={styles.link_to_Resume}>
-            <Link href="/resume">
-              <>Resume</>
-            </Link>
-          </div> */}
+
         </main>
-        <footer className={styles.footer}>© 2023 Kyler Nord | All Rights Reserved</footer>
+        
       </div>
     );
   }

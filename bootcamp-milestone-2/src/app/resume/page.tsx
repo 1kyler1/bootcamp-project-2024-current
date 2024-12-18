@@ -103,7 +103,7 @@ export default function Resume() {
                     </div>
                 </div>
             </main>
-            <footer className={styles.footer}>"© 2023 kyler's Personal Website | All Rights Reserved</footer>
+            
 
             
         </div>
