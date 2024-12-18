@@ -14,7 +14,7 @@ async function getBlog(slug: string) {
 		const res = await fetch(`http://localhost:3000/api/blog/${slug}`, {
 			cache: "no-store",	
 		})
-		// This checks that the GET request was successful
+		
 		if (!res.ok) {
 			throw new Error("Failed to fetch blog");
 		}
@@ -27,34 +27,47 @@ async function getBlog(slug: string) {
 		// Instead of "error: " + err, we can just do the above
 		// it is simular to formated strings in python --> f"{err}"
 	}
-}  //helllo
+}  
 
-export default async function Blog({ params }: Props) {
-  const { slug } = params;
-  const blog = await getBlog(slug);
-    return (
-      <div>
-        <main>
-          <main className="main">
-            <div className="title" id="blog">
-              <h1>{blog?.title}</h1>
-            </div>
-            <div className="image" id="blog">
-              <Image src={`/images/${blog?.image}`} alt="temp" height="500" width="500"/> 
-            </div>
 
-            <div className="content" id="blog">
-              <p>{blog?.content}</p>
-            </div>
+  export default async function Blog({ params: { slug } }: Props) {
+    // const { slug } = params;
 
-            <div className="comment" id="blog">
-              {blog.comments.map((comment: IComment, index: number) => (
-	                <Comment key={index} comment={comment} />
-	            ))}
-            </div>
+    const blog = await getBlog(slug);
+    console.log('blog comments:', blog?.comments);
+      return (
+        <div>
+          <main>
+            <main className="main">
+              <div className="title" id="blog">
+                <h1>{blog?.title}</h1>
+              </div>
+              <div className="image" id="blog">
+                <Image src={`/images/${blog?.image}`} alt="temp" height="500" width="500"/> 
+              </div>
+
+              <div className="content" id="blog">
+                <p>{blog?.content}</p>
+              </div>
+
+              
+              <div className="comment" id="blog">
+              {blog?.comments && blog.comments.length > 0 ? (
+                blog.comments.map((comment: IComment, index: number) => (
+                  <Comment key={index} comment={comment} />
+                ))
+              ) : (
+                <p>Comments not found.</p>
+              )}
+              </div>
+            </main>
+            <footer>© 2023 Kylerrrrr Nord | All Rights Reserved</footer>
           </main>
-          <footer>© 2023 Kyler Nord | All Rights Reserved</footer>
-        </main>
-      </div>
-    );
-  }
+        </div>
+      );
+    }
+  
+  
+
+
+    

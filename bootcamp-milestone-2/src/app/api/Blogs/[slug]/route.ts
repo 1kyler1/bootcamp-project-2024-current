@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import connectDB from "@/database/db"
-import blogSchema from "@/database/blogSchema"
+import Blog from "@/database/blogSchema"
 
 type IParams = {
 		params: {
@@ -8,15 +8,22 @@ type IParams = {
 		}
 }
 
-// If { params } looks confusing, check the note below this code block
-export async function GET(req: NextRequest, { params }: IParams) {
-    await connectDB() // function from db.ts before
-		const { slug } = params // another destructure
 
-	   try {
-	        const blog = await blogSchema.findOne({ slug }).orFail()
-	        return NextResponse.json(blog)
-	    } catch (err) {
-	        return NextResponse.json('Blog not found.', { status: 404 })
-	    }
-}
+export async function GET(req: NextRequest, { params }: IParams) {
+	await connectDB();
+	const { slug } = params;
+  
+	try {
+	  const blog = await Blog.findOne({ slug }).lean().orFail();
+  
+	  // Add the console.log here to inspect the blog data, including comments
+	  console.log("Fetched blog data:", JSON.stringify(blog, null, 2));
+  
+	  return NextResponse.json(blog, { status: 200 });
+	} catch (err) {
+	  console.error("Error fetching blog:", err);
+	  return NextResponse.json("Blog not found.", { status: 404 });
+	}
+  }
+
+

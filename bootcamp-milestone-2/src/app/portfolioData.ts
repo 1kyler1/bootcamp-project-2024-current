@@ -1,5 +1,5 @@
 import connectDB from "@/database/db";
-import ProjectMode1 from "@/database/projectSchema"
+import ProjectMode1 from "@/database/projectSchema";
 
 const projects: Project[] = [];
 
@@ -8,7 +8,7 @@ export interface Project {
     slug: string;
     date: string;
     description: string;
-    content: string
+    content: string;
     image: string;
     comments: Comment[];
 }
