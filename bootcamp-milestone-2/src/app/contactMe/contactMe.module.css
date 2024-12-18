@@ -1,17 +1,17 @@
-/* Style for the contact form */
+/* Style for the contact form
 #contact_form {
     max-width: 400px; 
-    margin: 20px auto; /* Centers the form horizontaly */
+    margin: 20px auto; 
     padding: 20px; 
-    background-color: white; /* Sets the background color of the form */
-    border-radius: 8px; /* Adds rounded corners */
+    background-color: white; 
+    border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     display: flex;
     flex-direction: column; 
-    gap: 15px; /* Adds space between form elements */
+    gap: 15px; 
   }
   
-  /* Style for input fields and textarea */
+  
   #contact_form input[type="text"],
   #contact_form input[type="email"],
   #contact_form textarea {
@@ -23,7 +23,7 @@
     box-sizing: border-box; 
   }
   
-  /* Style for the submit button */
+  
   #contact_form input[type="submit"] {
     background-color: #007bff; 
     color: white; 
@@ -35,14 +35,113 @@
     transition: background-color 0.3s; 
   }
   
-  /* Hover effect for the submit button */
+ 
   #contact_form input[type="submit"]:hover {
     background-color: #0056b3; 
   }
   
-  /* Style for labels */
+  
   #contact_form label {
     font-size: 14px; 
     margin-bottom: 5px; 
     font-weight: bold; 
-  }
+  } */
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pageTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formTitle {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #343a40;
+}
+
+.contactForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #343a40;
+}
+
+.formGroup input,
+.formGroup textarea {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.formGroup textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submitButton {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 10px;
+    }
+
+    .pageTitle {
+        font-size: 2rem;
+    }
+
+    .formTitle {
+        font-size: 1.25rem;
+    }
+
+    .submitButton {
+        width: 100%;
+    }
+}
