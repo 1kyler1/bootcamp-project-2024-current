@@ -15,36 +15,18 @@ function parseCommentTime(time: Date){
 }    
    
 
-// function Comment({ comment }: CommentProps) {
-//     return (
-//         <div>
-//             <h4>{comment.user}</h4>
-//             <p>{comment.comment}</p>
-//             <span>{parseCommentTime(new Date(comment.time))}</span>
-//         </div>
-//     );
-// }
-// function Comment({ comment }: CommentProps) {
-//     return (
-//         <div className={styles["comment-container"]}>
-//             <h4 className={styles["comment-header"]}>{comment.user}</h4>
-//             <p className={styles["comment-text"]}>{comment.comment}</p>
-//             <span className={styles["comment-time"]}>
-//                 {parseCommentTime(new Date(comment.time))}
-//             </span>
-//         </div>
-//     );
-// }
-
-function Comment({ comment }: { comment: IComment }) {
+function Comment({ comment }: CommentProps) {
     return (
-      <div className="comment-container">
-        <h4>{comment.user}</h4>
-        <p>{comment.comment}</p>
-        <span>{new Date(comment.time).toLocaleDateString()}</span>
-      </div>
+        <div>
+            <h4>{comment.user}</h4>
+            <p>{comment.comment}</p>
+            <span>{parseCommentTime(new Date(comment.time))}</span>
+        </div>
     );
-  }
+}
+
+
+
 
 
 export default Comment;
