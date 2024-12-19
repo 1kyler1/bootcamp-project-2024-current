@@ -54,16 +54,10 @@ export default async function Blog({ params: { slug } }: Props) {
           )}
         </div>
       </main>
-      <footer>© 2023 Kylerrrrr Nord | All Rights Reserved</footer>
+      <footer>© 2023 Kyler Nord | All Rights Reserved</footer>
     </div>
   );
 }
 
 
 
-
-
-
-
-
-    
