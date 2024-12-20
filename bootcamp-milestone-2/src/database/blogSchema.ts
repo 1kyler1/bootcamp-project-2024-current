@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 export type IComment = {
     user: string;
     comment: string;
-    time: Date;
+    date: Date;
 }
 export type Blog = {
     title: string;
@@ -14,14 +14,14 @@ export type Blog = {
     description: string; // for preview
     content: string; // for individual blog page
     image: string;
-    comments: IComment[]; // array for comments
+    comments: [IComment]; // array for comments
 };
 
 
 const blogSchema = new Schema<Blog>({
     title: { type: String, required: true },
-    slug: { type: String, required: true },
-    date: { type: Date, required: true}, // Use `Date.now` for dynamic defaults
+    slug: { type: String, required: true, unique: true, index: true }, // Ensure slug is unique and indexed
+    date: { type: Date, required: true }, // Use `Date.now` for dynamic defaults
     description: { type: String, required: true },
     content: { type: String, required: true },
     image: { type: String, required: true },
@@ -30,10 +30,10 @@ const blogSchema = new Schema<Blog>({
             {
                 user: { type: String, required: true },
                 comment: { type: String, required: true },
-                time: { type: Date, required: true}, // Default to current date/time
+                date: { type: Date, required: true }, // Default to current date/time
             },
         ],
-        default: [], // Ensure comments defaults to an empty array
+        default: [], // Ensure comments default to an empty array
     },
 });
 

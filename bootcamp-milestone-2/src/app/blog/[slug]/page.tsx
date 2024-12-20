@@ -8,25 +8,43 @@ type Props = {
     params: { slug: string }
 }
 
-async function getBlog(slug: string) {
-	try {
-		// This fetches the blog from an api endpoint that would GET the blog
-		const res = await fetch(`http://localhost:3000/api/blog/${slug}`, {
-			cache: "no-store",	
-		})
+// async function getBlog(slug: string) {
+// 	try {
+// 		// This fetches the blog from an api endpoint that would GET the blog
+// 		const res = await fetch(`http://localhost:3000/api/blog/${slug}`, {
+// 			cache: "no-store",	
+// 		})
 		
-		if (!res.ok) {
-			throw new Error("Failed to fetch blog");
-		}
+// 		if (!res.ok) {
+// 			throw new Error("Failed to fetch blog");
+// 		}
 
-		return res.json();
-	} catch (err: unknown) {
-		console.log(`error: ${err}`);
-		return null;
-	}
-}  
+// 		return res.json();
+// 	} catch (err: unknown) {
+// 		console.log(`error: ${err}`);
+// 		return null;
+// 	}
+// }  
 
+async function getBlog(slug: string) {
+  try {
+    console.log(`Fetching blog with slug: ${slug}`); // Log the slug
+    const res = await fetch(`http://localhost:3000/api/blog/${slug}`, {
+      cache: "no-store",
+    });
 
+    if (!res.ok) {
+      throw new Error("Failed to fetch blog");
+    }
+
+    const data = await res.json();
+    console.log(`Fetched blog data:`, data); // Log the fetched data
+    return data;
+  } catch (err: unknown) {
+    console.error(`Error fetching blog: ${err}`); // Log the error
+    return null;
+  }
+}
 
 
 export default async function Blog({ params }: Props) {
@@ -55,6 +73,7 @@ export default async function Blog({ params }: Props) {
           ) : (
             <p>Comments not found.</p>
           )}
+          {/* {blog.comments ? blog.comments.map(comment => <Comment comment={comment}/>): ""} */}
         </div>
       </main>
       <footer>© 2023 Kyler Nord | All Rights Reserved</footer>

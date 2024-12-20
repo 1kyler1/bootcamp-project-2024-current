@@ -1,4 +1,4 @@
-// db.ts
+
 import mongoose from "mongoose";
 
 const url: string = process.env.MONGO_URI as string;
@@ -17,3 +17,4 @@ const connectDB = async () => {
 };
 
 export default connectDB;
+
