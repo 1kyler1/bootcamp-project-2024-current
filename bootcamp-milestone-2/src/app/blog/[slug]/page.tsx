@@ -27,7 +27,10 @@ async function getBlog(slug: string) {
 }  
 
 
-export default async function Blog({ params: { slug } }: Props) {
+
+
+export default async function Blog({ params }: Props) {
+  const { slug } = await params;
   const blog = await getBlog(slug);
 
   if (!blog) {
@@ -39,7 +42,7 @@ export default async function Blog({ params: { slug } }: Props) {
       <main>
         <h1>{blog.title}</h1>
         <div className="image" id="blog">
-          <Image src={`/images/${blog.image}`} alt="temp" height="500" width="500"/> 
+          <Image src={`/images/${blog.image}`} alt="temp" height="500" width="500" />
         </div>
         <div className="content" id="blog">
           <p>{blog.content}</p>
