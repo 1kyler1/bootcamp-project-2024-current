@@ -30,7 +30,7 @@ import type { Blog } from "@/app/blogData";
 import style from './blogPreview.module.css';
 import Link from 'next/link';
 
-// Component for blog, it iterates through all the blogs from blog data and displays them
+// Component for blog, it iterates through all the blogs from blog data and displays them ff
 export default function BlogPreview(props: Blog) {
   return (
     <Link href={`/blog/${props.slug}`}>
