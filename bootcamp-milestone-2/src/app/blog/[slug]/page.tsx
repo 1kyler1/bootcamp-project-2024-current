@@ -38,7 +38,7 @@ async function getBlog(slug: string) {
     }
 
     const data = await res.json();
-    console.log(`Fetched blog data:`, data); // Log the fetched data
+    // console.log(`Fetched blog data:`, data); // Log the fetched data
     return data;
   } catch (err: unknown) {
     console.error(`Error fetching blog: ${err}`); // Log the error

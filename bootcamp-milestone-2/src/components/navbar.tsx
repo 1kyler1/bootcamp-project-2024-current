@@ -11,7 +11,7 @@ export default function Navbar() {
       <nav role="navigation">
         <Link href="/" className={style.navLink}>Home</Link>
         <Link href="/blog" className={style.navLink}>Blogs</Link>
-        <Link href="/portfolio" className={style.navLink}>Portfolio</Link>
+        <Link href="/project" className={style.navLink}>Portfolio</Link>
         <Link href="/resume" className={style.navLink}>Resume</Link>
         <Link href="/contactMe" className={style.navLink}>ContactMe</Link>
       </nav>

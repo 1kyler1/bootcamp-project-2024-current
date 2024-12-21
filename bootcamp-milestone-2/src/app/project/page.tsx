@@ -52,7 +52,7 @@ export default async function ProjectsPage() {
           <ul id="project_list" className="project_list">
             {projects.map((project) => (
               <li key={project.slug}>
-                <Link href={`/portfolio/${project.slug}`}>
+                <Link href={`/project/${project.slug}`}>
                   <PortfolioPreview
                     title={project.title}
                     slug={project.slug}
