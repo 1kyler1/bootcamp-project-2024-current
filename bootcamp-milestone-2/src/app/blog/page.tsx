@@ -3,7 +3,7 @@ import "@/app/full.css";
 import BlogPreview from "@/components/blogPreview";
 import getBlogs from '@/app/blogData';
 import type { Blog } from "@/app/blogData";
-import link from 'next/link';
+
 
 
 
