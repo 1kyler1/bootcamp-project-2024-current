@@ -63,7 +63,7 @@ export async function POST(req: NextRequest, { params }: IParams) {
 }
 
 function isValid(body: CommentBody): boolean {
-    if (!body || typeof body.comment !== 'string' || body.comment.trim() === '' || typeof body.user !== 'string') {
+    if (!body || typeof body.comment !== 'string' || body.comment.trim() === '' || typeof body.user !== 'string') {  //hello
         return false;
     }
     return true;
