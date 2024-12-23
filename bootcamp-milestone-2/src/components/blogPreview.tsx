@@ -28,12 +28,12 @@ import React from 'react';
 import Image from "next/image";
 import type { Blog } from "@/app/blogData";
 import style from './blogPreview.module.css';
-import Link from 'next/link';
+
 
 // Component for blog, it iterates through all the blogs from blog data and displays them ff
 export default function BlogPreview(props: Blog) {
   return (
-    <Link href={`/blog/${props.slug}`}>
+    // <Link href={`/blog/${props.slug}`}>
       <div className={style.previewContainer}>
         <h3 className={style.title}>{props.title}</h3>
         <div className={style.content}>
@@ -48,6 +48,6 @@ export default function BlogPreview(props: Blog) {
           <p className={style.date}>{props.date}</p>
         </div>
       </div>
-    </Link>
+    // </Link>
   );
 }
