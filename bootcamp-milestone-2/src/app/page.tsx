@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from 'next/link';
 import styles from "./home.module.css";
 
 export default function Home() {
@@ -16,7 +15,7 @@ export default function Home() {
             <div className={styles.about_image}>
             
             <Image
-              src="/kyler.jpeg" // Replace this with your actual image path
+              src="/images/kyler.jpeg" // Replace this with your actual image path
               alt="A photo of Kyler" // Provide descriptive alt text
               width={300} // Adjust width as needed
               height={300} // Adjust height as needed
