@@ -21,7 +21,7 @@
 
 import mongoose from "mongoose";
 
-let isConnected = false; // Track the connection status
+let isConnected = false;
 
 const connectDB = async () => {
     if (isConnected) {
@@ -29,14 +29,12 @@ const connectDB = async () => {
         return;
     }
 
-    const MONGO_URI = process.env.MONGO_URI;
-
-    if (!MONGO_URI) {
+    if (!process.env.MONGO_URI) {
         throw new Error("Missing MONGO_URI environment variable");
     }
 
     try {
-        const db = await mongoose.connect(MONGO_URI);
+        const db = await mongoose.connect(process.env.MONGO_URI);
         isConnected = db.connections[0].readyState === 1;
         console.log("Connected to MongoDB");
     } catch (error) {
@@ -46,4 +44,3 @@ const connectDB = async () => {
 };
 
 export default connectDB;
-

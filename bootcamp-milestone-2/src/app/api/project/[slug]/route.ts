@@ -4,7 +4,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import connectDB from "@/database/db";
 import Project from "@/database/projectSchema";
-// @ts-ignore: Suppressing TypeScript error for GET export
+
 type IParams = {
     params: {
         slug: string;
