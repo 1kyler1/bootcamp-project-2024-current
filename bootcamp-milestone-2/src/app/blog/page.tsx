@@ -10,7 +10,7 @@ import Link from 'next/link';
 export default async function BlogPage() {
   const blogs: Blog[] = await getBlogs() || []; // Fetch data directly
 
-  console.log("All blogs:", JSON.stringify(blogs, null, 2));
+//   console.log("All blogs:", JSON.stringify(blogs, null, 2));
 
     return (
         <div>

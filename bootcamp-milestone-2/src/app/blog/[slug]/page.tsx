@@ -54,7 +54,7 @@ export default async function Blog({ params }: Props) {
     return <div>Failed to load blog</div>;
   }
 
-  console.log('Rendering blog:', blog); // Log the blog data before rendering
+  
 
   return (
     <div>
