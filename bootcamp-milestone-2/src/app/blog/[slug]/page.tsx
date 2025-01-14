@@ -26,10 +26,30 @@ type Props = {
   };
 };
 
+// async function getBlog(slug: string) {
+//   try {
+//     console.log(`Fetching blog with slug: ${slug}`); // Log the slug
+//     const res = await fetch(`http://localhost:3000/api/blog/${slug}`, {
+//       cache: 'no-store',
+//     });
+
+//     if (!res.ok) {
+//       throw new Error('Failed to fetch blog');
+//     }
+
+//     const data = await res.json();
+//     // console.log(`Fetched blog data:`, data); // Log the fetched data
+//     return data;
+//   } catch (err: unknown) {
+//     console.error(`Error fetching blog: ${err}`); // Log the error
+//     return null;
+//   }
+// }
 async function getBlog(slug: string) {
   try {
+    const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
     console.log(`Fetching blog with slug: ${slug}`); // Log the slug
-    const res = await fetch(`http://localhost:3000/api/blog/${slug}`, {
+    const res = await fetch(`${baseUrl}/api/blog/${slug}`, {
       cache: 'no-store',
     });
 
