@@ -10,7 +10,7 @@ import CommentBox from '@/components/commentBox';
 type IComment = {
   user: string;
   comment: string;
-  time: Date;
+  date: Date;
 };
 
 type Blog = {
@@ -76,7 +76,7 @@ export default async function Blog({ params }: Props) {
             blog.comments.map((comment: IComment, index: number) => (
               <div key={index}>
                 <p><strong>{comment.user}</strong>: {comment.comment}</p>
-                <p><em>{new Date(comment.time).toLocaleString()}</em></p>
+                <p><em>{new Date(comment.date).toLocaleString()}</em></p>
               </div>
             ))
           ) : (
