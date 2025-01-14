@@ -4,11 +4,11 @@ import connectDB from "@/database/db";
 import Blog from "@/database/blogSchema";
 
 
-type IParams = {
-    params: {
-        slug: string;
-    };
-};
+// type IParams = {
+//     params: {
+//         slug: string;
+//     };
+// };
 
 // interface CommentBody {
 //     user: string;
