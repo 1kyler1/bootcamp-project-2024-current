@@ -25,10 +25,31 @@ type Props = {
   };
 };
 
+// async function getProject(slug: string) {
+//   try {
+//     console.log(`Fetching portfolio with slug: ${slug}`); // Log the slug
+//     const res = await fetch(`http://localhost:3000/api/project/${slug}`, {
+//       cache: 'no-store',
+//     });
+
+//     if (!res.ok) {
+//       throw new Error('Failed to fetch project');
+//     }
+
+//     const data = await res.json();
+//     console.log(`Fetched project data:`, data); // Log the fetched data
+//     return data;
+//   } catch (err: unknown) {
+//     console.error(`Error fetching project: ${err}`); // Log the error
+//     return null;
+//   }
+// }
+
 async function getProject(slug: string) {
   try {
+    const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
     console.log(`Fetching portfolio with slug: ${slug}`); // Log the slug
-    const res = await fetch(`http://localhost:3000/api/project/${slug}`, {
+    const res = await fetch(`${baseUrl}/api/project/${slug}`, {
       cache: 'no-store',
     });
 
