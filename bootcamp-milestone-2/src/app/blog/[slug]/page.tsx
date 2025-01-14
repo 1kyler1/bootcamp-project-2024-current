@@ -3,8 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './blog.module.css';
 
-import { GetStaticPaths, GetStaticProps } from 'next';
-import { useRouter } from 'next/router';
+
 
 
 type IComment = {
@@ -90,27 +89,13 @@ export default async function Blog({ params }: Props) {
     </div>
   );
 }
-
-export const getStaticPaths: GetStaticPaths = async () => {
+export async function generateStaticParams() {
   const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
   const res = await fetch(`${baseUrl}/api/blogs`);
   const blogs: Blog[] = await res.json();
 
-  const paths = blogs.map((blog) => ({
-    params: { slug: blog.slug },
+  return blogs.map((blog) => ({
+    slug: blog.slug,
   }));
+}
 
-  return { paths, fallback: 'blocking' };
-};
-
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const slug = params?.slug as string;
-  const blog = await getBlog(slug);
-
-  return {
-    props: {
-      blog,
-    },
-    revalidate: 10, // Revalidate at most once every 10 seconds
-  };
-};
