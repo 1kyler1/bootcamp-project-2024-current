@@ -81,7 +81,9 @@ export default async function Project({ params }: Props) {
           ) : (
             <p>Comments not found.</p>
           )}
-           <CommentBox slug={slug} route="project" />
+          <div className={styles.commentBox}>
+            <CommentBox slug={slug} route="project" />
+          </div>
         </div>
       </main>
       

@@ -83,7 +83,9 @@ export default async function Blog({ params }: Props) {
             
             <p>Comments not found.</p>
           )}
-          <CommentBox slug={slug} route="blog" />
+          <div className={styles.commentBox}>
+            <CommentBox slug={slug} route="blog" />
+          </div>
         </div>
       </main>
       

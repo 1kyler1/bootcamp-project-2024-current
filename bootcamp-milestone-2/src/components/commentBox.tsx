@@ -66,7 +66,8 @@ export default function CommentBox({
         margin: "1rem auto",
       }}
     >
-      <h3>Leave a Comment</h3>
+      <strong>Leave a Comment</strong>
+      {/* <h3>Leave a Comment</h3> */}
       <input
         type="text"
         placeholder="Your name"

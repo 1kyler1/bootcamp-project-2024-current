@@ -13,20 +13,25 @@
 
 .content {
   margin-bottom: 40px;
+  color: black;
 }
 
 .content p {
   font-size: 1.2em;
   line-height: 1.8;
+  color: black;
+
 }
 
 .comment {
   margin-top: 40px;
+  color: black;
 }
 
 .comment h2 {
   font-size: 1.8em;
   margin-bottom: 20px;
+  color: black;
 }
 
 .comment div {
@@ -34,10 +39,12 @@
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
+  color: black;
 }
 
 .comment div p {
   margin: 5px 0;
+  color: black;
 }
 
 .comment div p strong {
@@ -47,4 +54,10 @@
 .comment div p em {
   font-size: 0.9em;
   color: #555;
+}
+
+.commentBox {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
 }
