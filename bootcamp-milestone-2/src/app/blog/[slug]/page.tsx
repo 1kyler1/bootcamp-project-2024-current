@@ -3,6 +3,9 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './blog.module.css';
 
+import { GetStaticPaths, GetStaticProps } from 'next';
+import { useRouter } from 'next/router';
+
 
 type IComment = {
   user: string;
@@ -26,25 +29,7 @@ type Props = {
   };
 };
 
-// async function getBlog(slug: string) {
-//   try {
-//     console.log(`Fetching blog with slug: ${slug}`); // Log the slug
-//     const res = await fetch(`http://localhost:3000/api/blog/${slug}`, {
-//       cache: 'no-store',
-//     });
 
-//     if (!res.ok) {
-//       throw new Error('Failed to fetch blog');
-//     }
-
-//     const data = await res.json();
-//     // console.log(`Fetched blog data:`, data); // Log the fetched data
-//     return data;
-//   } catch (err: unknown) {
-//     console.error(`Error fetching blog: ${err}`); // Log the error
-//     return null;
-//   }
-// }
 async function getBlog(slug: string) {
   try {
     const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
@@ -105,3 +90,27 @@ export default async function Blog({ params }: Props) {
     </div>
   );
 }
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
+  const res = await fetch(`${baseUrl}/api/blogs`);
+  const blogs: Blog[] = await res.json();
+
+  const paths = blogs.map((blog) => ({
+    params: { slug: blog.slug },
+  }));
+
+  return { paths, fallback: 'blocking' };
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const slug = params?.slug as string;
+  const blog = await getBlog(slug);
+
+  return {
+    props: {
+      blog,
+    },
+    revalidate: 10, // Revalidate at most once every 10 seconds
+  };
+};
