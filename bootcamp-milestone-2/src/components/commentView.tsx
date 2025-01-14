@@ -20,7 +20,7 @@ function Comment({ comment }: CommentProps) {
         <div>
             <h4>{comment.user}</h4>
             <p>{comment.comment}</p>
-            <span>{parseCommentTime(new Date(comment.date))}</span>
+            <span>{parseCommentTime((comment.date))}</span>
         </div>
     );
 }

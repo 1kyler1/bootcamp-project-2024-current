@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './blog.module.css';
+import CommentBox from '@/components/commentBox';
 
 
 
@@ -9,7 +10,7 @@ import styles from './blog.module.css';
 type IComment = {
   user: string;
   comment: string;
-  date: Date;
+  time: Date;
 };
 
 type Blog = {
@@ -58,8 +59,6 @@ export default async function Blog({ params }: Props) {
     return <div>Failed to load blog</div>;
   }
 
-  
-
   return (
     <div>
       <main>
@@ -77,25 +76,24 @@ export default async function Blog({ params }: Props) {
             blog.comments.map((comment: IComment, index: number) => (
               <div key={index}>
                 <p><strong>{comment.user}</strong>: {comment.comment}</p>
-                <p><em>{new Date(comment.date).toLocaleString()}</em></p>
+                <p><em>{new Date(comment.time).toLocaleString()}</em></p>
               </div>
             ))
           ) : (
+            
             <p>Comments not found.</p>
           )}
+          <CommentBox slug={slug} route="blog" />
         </div>
       </main>
       
     </div>
   );
 }
-export async function generateStaticParams() {
-  const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
-  const res = await fetch(`${baseUrl}/api/blogs`);
-  const blogs: Blog[] = await res.json();
 
-  return blogs.map((blog) => ({
-    slug: blog.slug,
-  }));
-}
+
+
+
+
+
 

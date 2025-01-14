@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './project.module.css';
-
+import CommentBox from '@/components/commentBox';
 
 type IComment = {
   user: string;
@@ -81,6 +81,7 @@ export default async function Project({ params }: Props) {
           ) : (
             <p>Comments not found.</p>
           )}
+           <CommentBox slug={slug} route="project" />
         </div>
       </main>
       
